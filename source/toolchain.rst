@@ -24,7 +24,7 @@ For this, follow the following instructions:
 #. Press **CTRL+SHIFT+p**.
 #. Search for *Preferences: Open User Settings (JSON)* and add the following configuration:
 
-.. code-block:: yaml
+.. code-block:: none
 
 	"files.associations": {
 		"*.sv.mako": "systemverilog",

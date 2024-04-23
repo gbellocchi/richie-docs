@@ -55,7 +55,7 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+# templates_path = ['templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -76,10 +76,10 @@ language = 'en'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['../build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
+pygments_style = 'sphinx'
 
 
 
@@ -100,7 +100,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
     # Override default css to get a larger width for local build                 
     def setup(app):                                                              
         #app.add_javascript("custom.js")                                         
-        app.add_stylesheet('theme_overrides.css')                                
+        app.add_css_file('theme_overrides.css')                                
 else:                 
     html_theme = 'sphinx_book_theme'                                                           
     # Override default css to get a larger width for ReadTheDoc build            
@@ -121,7 +121,7 @@ else:
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['../static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
