@@ -3,8 +3,8 @@
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.
-SPHINXOPTS    ?=
-SPHINXBUILD   ?= sphinx-build
+SPHINXOPTS    =
+SPHINXBUILD   = sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
 
@@ -14,7 +14,24 @@ help:
 
 .PHONY: help Makefile
 
+deps/svprettyplot:
+	git submodule init
+	git submodule sync
+
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
-%: Makefile
+%: Makefile deps/svprettyplot
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+open:
+	firefox build/html/index.html
+# build:
+# 	sphinx-build -M html docs/source/ docs/build/
+
+# Installation
+
+py-env-install:
+	python -m pip install --upgrade pip
+	python -m pip install -r requirements.txt
+py-env-init:
+	python -m venv richie-docs-py-venv
