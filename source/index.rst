@@ -1,6 +1,6 @@
-======
+######
 Richie
-======
+######
 
 *Richie* is an open-source research SLD framework to simplify the design and exploration of Accelerator-Rich HeSoCs, based on the RISC-V ISA.
 
@@ -19,14 +19,14 @@ divided in a **streamer** interface towards the memory system, a
 
 .. toctree::
   :maxdepth: 3
+  :numbered:
   :caption: Contents:
 
   platform
   toolchain
+  richie-toolchain/richie-toolchain
   exploration
-
-
-
+  contributing
 
 .. note::
 

@@ -27,6 +27,9 @@ version = ''
 # The full version, including alpha/beta/rc tags
 release = '0.1'
 
+# Add tags
+tags.add('richie_docs') # Richie documentation
+
 # -- General configuration ---------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -43,8 +46,11 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
+    'sphinx.ext.ifconfig',
     'sphinxcontrib.wavedrom',
-    'svprettyplot.sphinx_sv_prettyplot'
+    'svprettyplot.sphinx_sv_prettyplot',
+    'm2r2',
+    'sphinxcontrib.details.directive'
 ]
 render_using_wavedrompy = True
 
@@ -60,8 +66,11 @@ intersphinx_disabled_domains = ['std']
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-# source_suffix = ['.rst', '.md']
-source_suffix = '.rst'
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.txt': 'markdown',
+    '.md': 'markdown',
+}
 
 # The master toctree document.
 master_doc = 'index'
@@ -82,27 +91,26 @@ exclude_patterns = ['../build', 'Thumbs.db', '.DS_Store']
 pygments_style = 'sphinx'
 
 
-
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
 # https://blog.deimos.fr/2014/10/02/sphinxdoc-and-readthedocs-theme-tricks-2/
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'                           
+on_rtd = os.environ.get('setup', None) == 'True'                           
                                                                                  
 if not on_rtd:  # only import and set the theme if we're building docs locally   
     html_theme = 'sphinx_book_theme'
     # import sphinx_rtd_theme                                                      
     # html_theme = 'sphinx_rtd_theme'                                              
     # html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]                   
-    # Override default css to get a larger width for local build                 
+    # Override default css to get a larger width for local build                
     def setup(app):                                                              
         #app.add_javascript("custom.js")                                         
-        app.add_css_file('theme_overrides.css')                                
+        app.add_css_file('theme_overrides.css') 
+        app.add_config_value('richie_docs', True, True)                                 
 else:                 
-    html_theme = 'sphinx_book_theme'                                                           
+    html_theme = 'sphinx_book_theme'                                                
     # Override default css to get a larger width for ReadTheDoc build            
     # html_context = {                                                             
     #     'css_files': [                                                           
@@ -163,20 +171,20 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-# latex_documents = [
-#     (master_doc, 'hwpe_intf_specs.tex', 'Hardware Processing Engines',
-#      'Gianluca Bellocchi', 'manual'),
-# ]
+latex_documents = [
+    (master_doc, 'richie_specs.tex', 'Richie',
+     'Gianluca Bellocchi', 'manual'),
+]
 
 
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-# man_pages = [
-#     (master_doc, 'hwpe_intf_specs', 'Hardware Processing Engines',
-#      [author], 1)
-# ]
+man_pages = [
+    (master_doc, 'richie_specs', 'Richie',
+     [author], 1)
+]
 
 
 # -- Options for Texinfo output ----------------------------------------------
@@ -184,11 +192,11 @@ latex_elements = {
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-# texinfo_documents = [
-#     (master_doc, 'hwpe_intf_specs', 'Hardware Processing Engines',
-#      author, 'hwpe_intf_specs', 'One line description of project.',
-#      'Miscellaneous'),
-# ]
+texinfo_documents = [
+    (master_doc, 'richie_specs', 'Richie',
+     author, 'richie_specs', 'One line description of project.',
+     'Miscellaneous'),
+]
 
 
 # -- Options for Epub output -------------------------------------------------

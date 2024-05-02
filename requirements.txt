@@ -3,3 +3,5 @@ sphinx==5.0.2
 sphinxcontrib-wavedrom==3.0.4
 sphinx_rtd_theme
 sphinx-book-theme>=0.3.3
+m2r2==0.3.2
+sphinxcontrib-details-directive==0.1.0
