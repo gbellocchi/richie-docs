@@ -27,8 +27,8 @@ version = ''
 # The full version, including alpha/beta/rc tags
 release = '0.1'
 
-# Add tags
-tags.add('richie_docs') # Richie documentation
+# # Add tags
+# tags.add('richie_docs') # Richie documentation
 
 # -- General configuration ---------------------------------------------------
 
@@ -108,7 +108,8 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
     def setup(app):                                                              
         #app.add_javascript("custom.js")                                         
         app.add_css_file('theme_overrides.css') 
-        app.add_config_value('richie_docs', True, True)                                 
+        # add tags to divide content of richie-docs and github
+        app.add_config_value(name='show_richie_docs', default=True, rebuild='env')                           
 else:                 
     html_theme = 'sphinx_book_theme'                                                
     # Override default css to get a larger width for ReadTheDoc build            

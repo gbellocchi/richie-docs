@@ -26,7 +26,10 @@ divided in a **streamer** interface towards the memory system, a
   toolchain
   richie-toolchain/richie-toolchain
   exploration
+  papers
+  license
   contributing
+  team
 
 .. note::
 

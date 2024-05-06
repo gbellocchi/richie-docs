@@ -4,5 +4,7 @@ Toolchain
 
 .. include:: ../../../richie-toolchain/README.rst
     :start-after: .. include_after_this_label
+    :end-before: .. include_before_this_label
     
-.. .. mdinclude:: ../../../richie-toolchain/tools/README.md
+.. include:: ../../../richie-toolchain/tools/README.rst
+.. include:: ../../../richie-toolchain/verif/README.rst
