@@ -90,6 +90,16 @@ exclude_patterns = ['../build', 'Thumbs.db', '.DS_Store']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
+# -- Restructured Text settings ------------------------------------------------
+
+prologPath = "prolog.inc"
+try:
+	with open(prologPath, "r") as prologFile:
+		rst_prolog = prologFile.read()
+except Exception as ex:
+	print(f"[ERROR:] While reading '{prologPath}'.")
+	print(ex)
+	rst_prolog = ""
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -97,28 +107,28 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 #
 # https://blog.deimos.fr/2014/10/02/sphinxdoc-and-readthedocs-theme-tricks-2/
-on_rtd = os.environ.get('setup', None) == 'True'                           
-                                                                                 
-if not on_rtd:  # only import and set the theme if we're building docs locally   
+on_rtd = os.environ.get('setup', None) == 'True'
+
+if not on_rtd:  # only import and set the theme if we're building docs locally
     html_theme = 'sphinx_book_theme'
-    # import sphinx_rtd_theme                                                      
-    # html_theme = 'sphinx_rtd_theme'                                              
-    # html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]                   
-    # Override default css to get a larger width for local build                
-    def setup(app):                                                              
-        #app.add_javascript("custom.js")                                         
-        app.add_css_file('theme_overrides.css') 
+    # import sphinx_rtd_theme
+    # html_theme = 'sphinx_rtd_theme'
+    # html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+    # Override default css to get a larger width for local build
+    def setup(app):
+        #app.add_javascript("custom.js")
+        app.add_css_file('theme_overrides.css')
         # add tags to divide content of richie-docs and github
-        app.add_config_value(name='show_richie_docs', default=True, rebuild='env')                           
-else:                 
-    html_theme = 'sphinx_book_theme'                                                
-    # Override default css to get a larger width for ReadTheDoc build            
-    # html_context = {                                                             
-    #     'css_files': [                                                           
-    #         'https://media.readthedocs.org/css/sphinx_rtd_theme.css',            
-    #         'https://media.readthedocs.org/css/readthedocs-doc-embed.css',       
-    #         '_static/theme_overrides.css',                                       
-    #     ],                                                                       
+        app.add_config_value(name='show_richie_docs', default=True, rebuild='env')
+else:
+    html_theme = 'sphinx_book_theme'
+    # Override default css to get a larger width for ReadTheDoc build
+    # html_context = {
+    #     'css_files': [
+    #         'https://media.readthedocs.org/css/sphinx_rtd_theme.css',
+    #         'https://media.readthedocs.org/css/readthedocs-doc-embed.css',
+    #         '_static/theme_overrides.css',
+    #     ],
     # }
 
 # Theme options are theme-specific and customize the look and feel of a theme
