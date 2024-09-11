@@ -7,4 +7,4 @@ Exploration
   :width: 90%
   :align: center
 
-  The Richie exploration flow.
+  Exploration flow.

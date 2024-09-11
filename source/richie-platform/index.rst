@@ -7,7 +7,7 @@ Platform
   :width: 90%
   :align: center
 
-  The Richie hardware architecture.
+  The :smallcap:`Richie` hardware architecture.
 
 
 .. figure:: img/richie_sw.*
@@ -15,4 +15,4 @@ Platform
   :width: 90%
   :align: center
 
-  The Richie software stack.
+  The :smallcap:`Richie` software stack.
