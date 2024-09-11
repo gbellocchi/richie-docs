@@ -14,7 +14,7 @@
 #
 import os
 import sys
-sys.path.append(os.path.abspath("../deps"))
+sys.path.append(os.path.abspath("./../deps"))
 
 # -- Project information -----------------------------------------------------
 
@@ -48,9 +48,9 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinxcontrib.wavedrom',
-    'svprettyplot.sphinx_sv_prettyplot',
     'm2r2',
-    'sphinxcontrib.details.directive'
+    'sphinxcontrib.details.directive',
+    'svprettyplot.sphinx_sv_prettyplot'
 ]
 render_using_wavedrompy = True
 
