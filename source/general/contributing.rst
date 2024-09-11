@@ -1,7 +1,7 @@
 ******************
 Contribution Guide
 ******************
-We are happy to accept pull requests and issues from any contributors. 
+We are happy to accept pull requests and issues from any contributors.
 Please note that we try to maintain a consistent quality standard.
 
 ==================
@@ -34,8 +34,8 @@ Consistent code style is important. We try to follow existing style conventions,
 
 Please make sure that any code you submit is adhering to the correct standard.
 
---------------------------
-About the Richie Toolchain
---------------------------
-The *Richie Toolchain* leverages linters to automatically analyze various code sources and detect bugs, convention violations and style guidelines.
+--------------------------------------
+About the :smallcap:`Richie` Toolchain
+--------------------------------------
+The :smallcap:`Richie Toolchain` leverages linters to automatically analyze various code sources and detect bugs, convention violations and style guidelines.
 More information is available in the corresponding :ref:`here <richie_toolchain_tools>`.

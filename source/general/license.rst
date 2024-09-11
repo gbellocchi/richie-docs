@@ -1,7 +1,7 @@
 =======
 License
 =======
-The components of the *Richie Framework* are released under permissive open-source licenses:
+The components of the :smallcap:`Richie framework` are released under permissive open-source licenses:
 
 * **Source files**, **tool scripts** and **templates** are released under the :code:`Apache 2.0 license` (`Apache-2.0 <https://www.apache.org/licenses/LICENSE-2.0>`_).
 * **Generated components** are differently released depending on their specific nature:

@@ -2,10 +2,10 @@
 Publications
 ============
 
-------------
-About Richie
-------------
-If you use Richie in your work, you can cite us:
+------------------------
+About :smallcap:`Richie`
+------------------------
+If you use :smallcap:`Richie` in your work, you can cite us:
 
 .. details:: A RISC-V-based FPGA overlay to simplify embedded accelerator deployment
 
