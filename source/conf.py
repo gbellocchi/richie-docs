@@ -14,7 +14,7 @@
 #
 import os
 import sys
-sys.path.append(os.path.abspath("./../deps"))
+# sys.path.append(os.path.abspath("../deps"))
 
 # -- Project information -----------------------------------------------------
 
@@ -49,9 +49,9 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinxcontrib.wavedrom',
     'm2r2',
-    'sphinxcontrib.details.directive',
-    'svprettyplot.sphinx_sv_prettyplot'
+    'sphinxcontrib.details.directive'
 ]
+# 'svprettyplot.sphinx_sv_prettyplot'
 render_using_wavedrompy = True
 
 intersphinx_mapping = {
