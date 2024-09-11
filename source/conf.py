@@ -14,7 +14,7 @@
 #
 import os
 import sys
-# sys.path.append(os.path.abspath("../deps"))
+sys.path.append(os.path.abspath("../_ext"))
 
 # -- Project information -----------------------------------------------------
 
@@ -49,9 +49,10 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinxcontrib.wavedrom',
     'm2r2',
-    'sphinxcontrib.details.directive'
+    'sphinxcontrib.details.directive',
+    'svprettyplot.sphinx_sv_prettyplot'
 ]
-# 'svprettyplot.sphinx_sv_prettyplot'
+
 render_using_wavedrompy = True
 
 intersphinx_mapping = {
@@ -140,7 +141,7 @@ else:
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['../static']
+html_static_path = ['../_static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.

@@ -31,3 +31,8 @@ formats:
 python:
   install:
     - requirements: requirements.txt
+
+submodules:
+  include:
+     - _ext/svprettyplot
+  recursive: false

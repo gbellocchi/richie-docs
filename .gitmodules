@@ -1,0 +1,3 @@
+[submodule "_ext/svprettyplot"]
+	path = _ext/svprettyplot
+	url = git@github.com:FrancescoConti/svprettyplot.git
