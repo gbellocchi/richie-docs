@@ -2,17 +2,17 @@
 Platform
 ********
 
-.. figure:: img/richie_hw.*
+.. figure:: ../img/richie_hw.*
   :figwidth: 90%
   :width: 90%
   :align: center
 
-  The :smallcap:`Richie` hardware architecture.
+  Hardware architecture.
 
 
-.. figure:: img/richie_sw.*
+.. figure:: ../img/richie_sw.*
   :figwidth: 90%
   :width: 90%
   :align: center
 
-  The :smallcap:`Richie` software stack.
+  Software stack.

@@ -7,7 +7,7 @@ Toolchain
   :width: 90%
   :align: center
 
-  The :smallcap:`Richie toolchain`.
+  Toolchain architecture.
 
 ============
 Introduction
