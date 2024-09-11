@@ -27,9 +27,7 @@ build:
 formats:
   - pdf
 
+# Optionally set the version of Python and requirements required to build your docs
 python:
   install:
     - requirements: requirements.txt
-    # Install our python package before building the docs
-    - method: pip
-      path: .
