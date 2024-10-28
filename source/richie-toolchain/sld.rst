@@ -1,29 +1,30 @@
 ===================
-System-Level Design
+System-level design
 ===================
+.. _richie_toolchain_sld:
 
-The :smallcap:`Richie toolchain` facilitates three SLD phases concerning the assembling of Accelerator-Rich HeSoCs:
+The :smallcap:`Richie toolchain` facilitates three SLD phases concerning the assembling of accelerator-rich HeSoCs:
 
-#. **Accelerator design**;
-#. **System integration**;
-#. **System optimization**.
+#. :bolditalic:`Accelerator design`;
+#. :bolditalic:`System integration`;
+#. :bolditalic:`System optimization`.
 
 ------------------
-Accelerator Design
+Accelerator design
 ------------------
-.. _richie_toolchain_root_sld_acc_design:
+.. _richie_toolchain_sld_acc_design:
 
 This phase produces the accelerator datapaths. The :smallcap:`Richie toolchain` supports various design flows to
 accommodate a wide range of users and application needs, including:
 
-* High-Level Synthesis:
+* High-level synthesis:
 
   * `AMD-Xilinx Vitis HLS <https://www.xilinx.com/products/design-tools/vitis/vitis-hls.html>`_
   * `Coarse-Grain Reconfigurable (CGR) Hardware Accelerators <https://mdc-suite.github.io/>`_
 
-* Manual RTL Design:
+* Manual RTL design:
 
-  * `HWPE-based Accelerators <https://hwpe-doc.readthedocs.io/en/latest/index.html>`_
+  * `HWPE-based Accelerators <https://hwpe-doc.readthedocs.io/en/latest/github.html>`_
 
 The IP interface is expected to attain the following requirements:
 
@@ -31,11 +32,11 @@ The IP interface is expected to attain the following requirements:
 * Adopt *simple data ports* or wires for control parameters, thus with no associated I/O protocol and handshaking signal.
 
 ------------------
-System Integration
+System integration
 ------------------
-.. _richie_toolchain_root_sld_integration:
+.. _richie_toolchain_sld_integration:
 
-This phase generates the accelerator interfaces which facilitate the integration inside the Accelerator-Rich HeSoC.
+This phase generates the accelerator interfaces which facilitate the integration inside the accelerator-rich HeSoC.
 These include HW interfaces for data communication and control, as well as SW drivers (API, runtime, HAL).
 The user is asked to provide an *accelerator specification file* describing the characteristics of the accelerator
 interface, as shown in the example below:
@@ -66,12 +67,12 @@ Specifications are collected in the accelerator library (:code:`src/accelerators
   and the outer platform.
 
 -------------------
-System Optimization
+System optimization
 -------------------
-.. _richie_toolchain_root_sld_optimization:
+.. _richie_toolchain_sld_optimization:
 
 This phase performs the specialization of the platform parts to meet the requirements of the integrated workload.
-The outcome consists of a specialized and optimized *Accelerator-Rich HeSoC*.
+The outcome consists of a specialized and optimized *accelerator-rich HeSoC*.
 Similarly, this phase mandates a *platform specification file* with the HeSoC characteristics,
 
 .. code-block:: python
@@ -99,4 +100,4 @@ Similarly, this phase mandates a *platform specification file* with the HeSoC ch
 Specifications are collected in the platform library (:code:`src/platforms/`), including the following sections:
 
 * :code:`specs/`: This location contains the platform specification file :code:`platform_specs.py`, which guides the
-  :smallcap:`Richie toolchain` on how to specialize the Accelerator-Rich HeSoC.
+  :smallcap:`Richie toolchain` on how to specialize the accelerator-rich HeSoC.

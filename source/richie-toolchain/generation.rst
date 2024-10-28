@@ -1,7 +1,7 @@
-===================
-The generation flow
-===================
-.. _richie_toolchain_root_generation:
+===============
+Generation Flow
+===============
+.. _richie_toolchain_generation:
 
 The *generation flow* is the toolchain automation core and enables the seamless and rapid composition of accelerator-rich platforms.
 
@@ -27,9 +27,9 @@ How generation works
 The :smallcap:`Richie toolchain` adopts a design automation approach, where:
 
 1. *Platform* and *accelerator specification files* are user-defined parameters, which are employed as the design knobs to specialize the HeSoC parts;
-2. *Templates* are *rendered* into various output formats, e.g., HW/SW components, scripts, documentation, etc;
+2. *Templates* are *rendered* into various output formats, e.g., hardware-software components, scripts, documentation, etc;
 3. The *generation flow* provides parameters to a Mako-based *rendering engine*, which parses and renders the toolchain templates;
-4. The generation output is a *full-fledged Accelerator-Rich HeSoC*, including a ready-to-go HW/SW stack, simulation testbenches and FPGA scripts.
+4. The generation output is a *full-fledged accelerator-rich HeSoC*, including a ready-to-go hardware-software stack, simulation testbenches and FPGA scripts.
 
 ----------
 How to run
@@ -43,7 +43,7 @@ The generation flow is triggered with the following command:
 Additionally, add the following arguments:
 
 * **TARGET_PLATFORM**: This is to specify the target platform, where the device-under-test (DUT) is integrated.
-  This should match the name declared in the corresponding :ref:`platform specification file <richie_toolchain_root_sld_optimization>`.
+  This should match the name declared in the corresponding :ref:`platform specification file <richie_toolchain_sld_optimization>`.
   For example, :code:`make clean all TARGET_PLATFORM=richie_example` is run to generate the target platform :code:`richie_example`, which
   specification is kept under :code:`src/platforms/richie_example/specs`.
 

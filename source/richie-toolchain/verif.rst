@@ -5,7 +5,7 @@ Verification
 -----------------------------------
 HWPE-based accelerator (standalone)
 -----------------------------------
-The :smallcap:`Richie toolchain` supports the standalone verification of its *generated* `Hardware Processing Engine (HWPE) accelerators <https://hwpe-doc.readthedocs.io/en/latest/>`_.
+The :smallcap:`Richie toolchain` supports the standalone verification of its *generated* `HWPE accelerators <https://hwpe-doc.readthedocs.io/en/latest/>`_.
 Additional information concerning the adopted test suite is available in the repository of the `HWPE TestBench (TB) <https://github.com/pulp-platform/hwpe-tb>`_.
 
 ^^^^^^^^^^^^^^^^^^^^
@@ -16,7 +16,7 @@ The HWPE TB is cloned as a Git submodule running :code:`git submodule update --i
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Prepare the Verification Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Once the :ref:`generation <richie_toolchain_root_generation>` of the target platform completes, the verification environment can be set by importing the generated TB components.
+Once the :ref:`generation <richie_toolchain_generation>` of the target platform completes, the verification environment can be set by importing the generated TB components.
 From the root of the :smallcap:`Richie toolchain`, run the following command:
 
 .. code-block:: console
@@ -26,10 +26,10 @@ From the root of the :smallcap:`Richie toolchain`, run the following command:
 Additionally, add the following arguments:
 
 * **TARGET_PLATFORM**: This is to specify the target platform, where the device-under-test (DUT) is integrated.
-  This should match the name declared in the corresponding :ref:`platform specification file <richie_toolchain_root_sld_optimization>`.
+  This should match the name declared in the corresponding :ref:`platform specification file <richie_toolchain_sld_optimization>`.
 
 * **TARGET_ACC_VERIF**: The target DUT, which is assumed to be integrated into the <TARGET_PLATFORM>. This should match the name
-  declared in the corresponding :ref:`accelerator specification file <richie_toolchain_root_sld_integration>`.
+  declared in the corresponding :ref:`accelerator specification file <richie_toolchain_sld_integration>`.
 
 ^^^^^^^^^^^^
 Build the HW

@@ -1,6 +1,7 @@
 ===============
 Getting Started
 ===============
+.. _richie_toolchain_getting_started:
 
 --------------------
 Clone the Repository
