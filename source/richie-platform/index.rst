@@ -2,17 +2,10 @@
 Platform
 ********
 
-.. figure:: ../img/richie_hw.*
-  :figwidth: 90%
-  :width: 90%
-  :align: center
+.. include:: hardware_architecture.rst
+.. include:: software_stack.rst
 
-  Hardware architecture.
+..
+  .. include:: hardware_verif.rst
 
 
-.. figure:: ../img/richie_sw.*
-  :figwidth: 90%
-  :width: 90%
-  :align: center
-
-  Software stack.
