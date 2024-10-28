@@ -15,8 +15,8 @@ Git Considerations
 * Use the imperative mood in the subject line
 * Use the body to explain what and why vs. how
 
-For further information please see the excellent
-[guide](https://chris.beams.io/posts/git-commit/) by Chris Beams.
+For further information please see the excellent 
+`guide <https://chris.beams.io/posts/git-commit/>`_ by Chris Beams.
 
 ============
 Coding Style

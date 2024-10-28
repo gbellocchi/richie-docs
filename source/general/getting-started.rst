@@ -1,6 +1,7 @@
 ***************
 Getting Started
 ***************
+.. _general_getting_started:
 
 ================
 External sources
@@ -24,7 +25,7 @@ Prerequisites
 ----
 HERO
 ----
-HERO is leveraged as a build system for various components of the :smallcap:`Richie` ecosystem thus its installation is mandatory.
+HERO is leveraged as a build system for the software components of :smallcap:`Richie`, thus its installation is mandatory.
 We therefore recommend:
 
 * Adhering the following list of `prerequisites <https://github.com/pulp-platform/hero/blob/master/PREREQUISITES.md>`_;

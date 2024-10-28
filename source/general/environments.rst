@@ -1,6 +1,8 @@
 ************
 Environments
 ************
+.. _general_environments:
+
 :smallcap:`Richie` supports various development environments, depending on the implementation target.
 
 ===========
@@ -12,16 +14,16 @@ Vitis Libraries
 ---------------
 Tool version:
 
-* AMD-Xilinx tools:
+* :code:`AMD-Xilinx tools`
 
-  * Version |rarr| 2022.2;
-  * Usage |rarr| Required for HLS synthesis.
+  * **Version** |rarr| 2022.2;
+  * **Usage** |rarr| Required for HLS synthesis.
 
-* OpenCV:
+* :code:`OpenCV`
 
-  * Version |rarr| OpenCV-4.4.0 x86 libraries;
-  * Usage |rarr| Required for synthesizing Vision kernels;
-  * Installation |rarr| refer to the `Vitis Vision Library documentation <https://github.com/Xilinx/Vitis_Libraries/blob/main/vision/README.md>`_.
+  * **Version** |rarr| OpenCV-4.4.0 x86 libraries;
+  * **Usage** |rarr| Required for synthesizing Vision kernels;
+  * **Installation** |rarr| Refer to the `Vitis Vision Library documentation <https://github.com/Xilinx/Vitis_Libraries/blob/main/vision/README.md>`_.
 
 ==========
 Deployment
