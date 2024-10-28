@@ -37,9 +37,9 @@ If you use Richie in your work, you can cite us:
 <details>
 <summary><b>Richie: A Framework for Agile Design and Exploration of RISC-V-based Accelerator-Rich Heterogeneous SoCs</b></summary>
 <p>
-  
+
   ```
-  TBD
+  Under review.
   ```
 
 </p>
@@ -64,4 +64,4 @@ If you use Richie in your work, you can cite us:
 </details>
 
 ## Kudos
-The repository structure is inspirated and based on *pulp-platform/hwpe-doc*.
+This documentation project is inspired by the *pulp-platform/hwpe-doc* project.

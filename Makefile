@@ -25,13 +25,10 @@ _ext/svprettyplot:
 
 open:
 	firefox build/html/index.html
-# build:
-# 	sphinx-build -M html docs/source/ docs/build/
-
-# Installation
 
 py-env-install:
 	python -m pip install --upgrade pip
 	python -m pip install -r requirements.txt
+	
 py-env-init:
 	python -m venv richie-docs-py-venv

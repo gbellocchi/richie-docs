@@ -1,7 +1,9 @@
-pydotplus==2.0.2
-sphinx==5.0.2
-sphinxcontrib-wavedrom==3.0.4
+pydotplus>=2.0.2
+sphinx>=5.0.2
+sphinxcontrib-wavedrom>=3.0.4
 sphinx_rtd_theme
 sphinx-book-theme>=0.3.3
-m2r2==0.3.2
-sphinxcontrib-details-directive==0.1.0
+m2r2>=0.3.2
+sphinxcontrib-details-directive>=0.1.0
+sphinxcontrib-bibtex>=2.6.2
+sphinx_design>=0.6.0

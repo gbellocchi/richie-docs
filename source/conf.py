@@ -14,7 +14,12 @@
 #
 import os
 import sys
+
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.append(os.path.abspath("../_ext"))
+sys.path.append(os.path.abspath("../_static/python")) # include path to static python functions (and then add top to 'extensions', e.g., button.py)
 
 # -- Project information -----------------------------------------------------
 
@@ -48,9 +53,12 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinxcontrib.wavedrom',
-    'm2r2',
+    'svprettyplot.sphinx_sv_prettyplot',
     'sphinxcontrib.details.directive',
-    'svprettyplot.sphinx_sv_prettyplot'
+    'sphinxcontrib.bibtex', # .bib files
+    'sphinx_design', # badges, buttons, etc.
+    'button', # button (defined in CSS+Python)
+    'm2r2'
 ]
 
 render_using_wavedrompy = True
@@ -72,6 +80,9 @@ source_suffix = {
     '.txt': 'markdown',
     '.md': 'markdown',
 }
+
+# Source encoding
+source_encoding = 'utf-8-sig'
 
 # The master toctree document.
 master_doc = 'index'
@@ -143,6 +154,16 @@ else:
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['../_static']
 
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+
+# Add custom CSS
+html_css_files = [
+    'css/button.css',
+    'css/strike.css',
+    'css/colors.css',
+]
+
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
 #
@@ -152,7 +173,6 @@ html_static_path = ['../_static']
 # 'searchbox.html']``.
 #
 # html_sidebars = {}
-
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
@@ -230,6 +250,17 @@ epub_exclude_files = ['search.html']
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+# -- BibTeX configuration -------------------------------------------------
+bibtex_bibfiles = [
+    'publications/conference.bib',
+    'publications/journal.bib',
+    'publications/other_frameworks.bib',
+    'publications/other_accelerators.bib'
+]
+bibtex_encoding = 'utf-8-sig'
+bibtex_default_style = 'alpha'
+bibtex_reference_style='label'
 
 # -- Extension configuration -------------------------------------------------
 numfig = True

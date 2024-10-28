@@ -4,7 +4,7 @@
 
 :smallcap:`Richie` is an open-source research SLD framework to simplify the design and exploration of Accelerator-Rich HeSoCs, based on the RISC-V ISA.
 
-.. figure:: img/richie_summary.*
+.. figure:: img/richie.*
   :figwidth: 90%
   :width: 90%
   :align: center
@@ -21,9 +21,11 @@
   richie-platform/index
   richie-toolchain/index
   richie-exploration/index
-  general/papers
-  general/license
+  general/repository
+  general/tutorial
   general/contributing
+  publications/publications
+  general/license
   general/team
 
 .. note::
