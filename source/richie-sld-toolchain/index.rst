@@ -8,7 +8,7 @@ Toolchain
   :width: 90%
   :align: center
 
-  Toolchain architecture: from initial design to FPGA deployment.
+  SLD toolchain architecture.
 
 ============
 Introduction
