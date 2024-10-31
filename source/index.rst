@@ -16,12 +16,11 @@
   :numbered:
   :caption: Contents:
 
+  richie-platform/index
+  richie-sld-toolchain/index
+  richie-exploration/index
   general/getting-started
   general/environments
-  richie-platform/index
-  richie-toolchain/index
-  richie-exploration/index
-  general/repository
   general/tutorial
   general/contributing
   publications/publications
