@@ -5,7 +5,7 @@ Useful Repositories
 -----------------------------------------
 AMD-Xilinx Open Hardware Competition 2023
 -----------------------------------------
-*GenOv* - the former name of the :smallcap:`Richie toolchain` - was proposed in the 2023 edition of the AMD-Xilinx Open Hardware Competition.
+*GenOv* - the former name of the :smallcap:`Richie SLD toolchain` - was proposed in the 2023 edition of the AMD-Xilinx Open Hardware Competition.
 
 .. code-block:: none
 

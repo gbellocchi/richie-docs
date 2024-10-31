@@ -8,7 +8,7 @@ We leverage Pylint to detect style elements that are in violation of the `PEP8 P
 ^^^^^^^^^^^^^^
 How to install
 ^^^^^^^^^^^^^^
-Pylint is automatically installed within the Python Virtual Environment of the :smallcap:`Richie toolchain`.
+Pylint is automatically installed within the Python Virtual Environment of the :smallcap:`Richie SLD toolchain`.
 
 ^^^^^^^^^^
 How to use

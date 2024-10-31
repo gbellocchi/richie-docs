@@ -12,10 +12,8 @@ afterwards with :code:`git submodule update --init --recursive`.
 ---------------------------------------------------
 Integration within the :smallcap:`Richie framework`
 ---------------------------------------------------
-This toolchain is employed as part of the :smallcap:`Richie framework`, which includes the HW/SW components to design,
-build, and deploy a full-fledged accelerator-rich HeSoC.
-This ecosystem leverages the :smallcap:`Richie toolchain` to generate the necessary HW/SW sources to drive the specialization
-of the target HeSoC platform.
+This toolchain is employed as part of the :smallcap:`Richie framework`, which includes the hardware and software components to design, build and deploy a full-fledged accelerator-rich HeSoC.
+The :smallcap:`Richie SLD toolchain` is leveraged to generate the HeSoC sources to drive the exploration of implementation variants, thus optimize the HeSoC on top of the application requirements.
 To safely let the framework parts interact, the root of the :smallcap:`Richie` hardware subsystem (:code:`RICHIE_HW`) must be defined accordingly:
 
 .. code-block:: console

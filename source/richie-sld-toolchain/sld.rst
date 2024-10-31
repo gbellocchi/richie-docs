@@ -3,7 +3,7 @@ System-level design
 ===================
 .. _richie_toolchain_sld:
 
-The :smallcap:`Richie toolchain` facilitates three SLD phases concerning the assembling of accelerator-rich HeSoCs:
+The toolchain facilitates three SLD phases concerning the assembling of accelerator-rich HeSoCs:
 
 #. :bolditalic:`Accelerator design`;
 #. :bolditalic:`System integration`;
@@ -14,7 +14,7 @@ Accelerator design
 ------------------
 .. _richie_toolchain_sld_acc_design:
 
-This phase produces the accelerator datapaths. The :smallcap:`Richie toolchain` supports various design flows to
+This phase produces the accelerator datapaths. The toolchain supports various design flows to
 accommodate a wide range of users and application needs, including:
 
 * High-level synthesis:
@@ -99,5 +99,4 @@ Similarly, this phase mandates a *platform specification file* with the HeSoC ch
 
 Specifications are collected in the platform library (:code:`src/platforms/`), including the following sections:
 
-* :code:`specs/`: This location contains the platform specification file :code:`platform_specs.py`, which guides the
-  :smallcap:`Richie toolchain` on how to specialize the accelerator-rich HeSoC.
+* :code:`specs/`: This location contains the platform specification file :code:`platform_specs.py`, which drives the specialization of the HeSoC platform.

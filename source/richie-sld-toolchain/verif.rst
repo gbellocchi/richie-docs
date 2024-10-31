@@ -5,7 +5,7 @@ Verification
 -----------------------------------
 HWPE-based accelerator (standalone)
 -----------------------------------
-The :smallcap:`Richie toolchain` supports the standalone verification of its *generated* `HWPE accelerators <https://hwpe-doc.readthedocs.io/en/latest/>`_.
+This toolchain supports the standalone verification of its *generated* `HWPE accelerators <https://hwpe-doc.readthedocs.io/en/latest/>`_.
 Additional information concerning the adopted test suite is available in the repository of the `HWPE TestBench (TB) <https://github.com/pulp-platform/hwpe-tb>`_.
 
 ^^^^^^^^^^^^^^^^^^^^
@@ -17,7 +17,7 @@ The HWPE TB is cloned as a Git submodule running :code:`git submodule update --i
 Prepare the Verification Environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Once the :ref:`generation <richie_toolchain_generation>` of the target platform completes, the verification environment can be set by importing the generated TB components.
-From the root of the :smallcap:`Richie toolchain`, run the following command:
+From the root of the :smallcap:`Richie SLD toolchain`, run the following command:
 
 .. code-block:: console
 
@@ -34,7 +34,7 @@ Additionally, add the following arguments:
 ^^^^^^^^^^^^
 Build the HW
 ^^^^^^^^^^^^
-Move now to the root of the HWPE TB (:code:`richie-toolchain/verif/hwpe-tb`) and run the following command to update the external IP sources:
+Move now to the root of the HWPE TB (:code:`richie-sld-toolchain/verif/hwpe-tb`) and run the following command to update the external IP sources:
 
 .. code-block:: console
 
@@ -46,7 +46,7 @@ finally build the HW:
 
 .. code-block:: console
 
-  export VSIM_PATH=<global-path-to-richie-toolchain>/richie-toolchain/verif/hwpe-tb/hw/sim
+  export VSIM_PATH=<global-path-to-richie-sld-toolchain>/richie-sld-toolchain/verif/hwpe-tb/hw/sim
   make build-hw
 
 ^^^^^^^^^^^^^^^^^^^^

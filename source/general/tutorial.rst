@@ -45,7 +45,7 @@ More information is available in the `Vitis Vision Library documentation <https:
 -------------------
 System-level design
 -------------------
-The following steps explain how to employ the :smallcap:`Richie toolchain` to automatically assemble various instances of the 
+The following steps explain how to employ the toolchain to automatically assemble various instances of the 
 accelerator-rich computer vision platform.
 
 ^^^^^^^^^^^^^^^^^^
@@ -70,7 +70,7 @@ Then pick one pipeline stage at a time, run the following commands and then repe
 ^^^^^^^^^^^^^^^^^^
 System integration
 ^^^^^^^^^^^^^^^^^^
-During this design stage, the :smallcap:`Richie toolchain` optimizes the :ref:`HWPE hardware-software interface <richie_platform_accelerators>`
+During this design stage, the toolchain optimizes the :ref:`HWPE hardware-software interface <richie_platform_accelerators>`
 to enable the communication between the previously designed HLS pipeline components and the :smallcap:`Richie platform`.
 
 Move to the toolchain location and follow :ref:`this guide <richie_toolchain_getting_started>` to adequately 
@@ -78,9 +78,9 @@ initialize the toolchain environment.
 
 .. code-block:: console
 
-  cd $RICHIE_HOME_DIR/richie-toolchain
+  cd $RICHIE_HOME_DIR/sld-tools/richie-sld-toolchain
 
-The HWPE interface is automatically generated using the :smallcap:`Richie toolchain` and 
+The HWPE interface is automatically generated and 
 to adequately specialize the HWPE interface, the toolchain requires a high-level description 
 of the accelerated functionality, i.e., an :ref:`accelerator specification file <richie_toolchain_sld_integration>`.
 These are collected in the *accelerator library* under :code:`src/accelerators`. 
@@ -92,7 +92,7 @@ Finally, the *system integration phase* is automatically run as part of the :sma
 ^^^^^^^^^^^^^^^^^^^
 System optimization
 ^^^^^^^^^^^^^^^^^^^
-At this stage, the :smallcap:`Richie toolchain` optimizes the :smallcap:`Richie platform` to serve the integrated accelerators with 
+At this stage, the SLD toolchain optimizes the :smallcap:`Richie platform` to serve the integrated accelerators with 
 specialized .
 This phase is driven by a :ref:`platform specification file <richie_toolchain_sld_optimization>`, where are described 
 the design requirements of the HeSoC components, including the clusters and the memory subsystem, as well as how 
@@ -125,7 +125,7 @@ Then launch the SLD flow with the following command:
 
 .. code-block:: console
 
-  cd $RICHIE_HOME_DIR/richie-toolchain
+  cd $RICHIE_HOME_DIR/sld-tools/richie-sld-toolchain
   make clean all TARGET_PLATFORM=color_detect_6stg_6cl_16l1p_6l2p
 
 The generated instance is now available under :code:`output`, including the following locations:
