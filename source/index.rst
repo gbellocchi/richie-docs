@@ -13,7 +13,7 @@
 the *assembling* and *specialization* of accelerator-rich Heterogeneous Systems-on-Chip (HeSoCs).
 The project consists of the following key components:
 
-- :smallcapbold:`Platform`—Modular and composable accelerator-rich architecture, based on the RISC-V Instruction Set Architecture (ISA);
+- :smallcapbold:`Platform`—Modular and composable HeSoC architecture, based on the RISC-V ISA;
 - :smallcapbold:`SLD toolchain`—Automatic design and specialization accelerator-rich, multi-cluster platforms;
 - :smallcapbold:`Exploration flow`—Weigh design trade-offs, identifying the best candidate at meeting your application needs. :smallcap:`Richie` leverages FPGAs to emulate full-stack applications and navigate the HeSoC design space, enabling deeper introspection into the non-idealities occurring at system-level.
 

@@ -1,6 +1,6 @@
-*********
-Toolchain
-*********
+*************
+SLD toolchain
+*************
 .. _richie_toolchain_index:
 
 .. figure:: ../img/richie_sld_toolchain.*
