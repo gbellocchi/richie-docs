@@ -73,7 +73,7 @@ System integration
 During this design stage, the toolchain optimizes the :ref:`HWPE hardware-software interface <richie_platform_accelerators>`
 to enable the communication between the previously designed HLS pipeline components and the :smallcap:`Richie platform`.
 
-Move to the toolchain location and follow :ref:`this guide <richie_toolchain_getting_started>` to adequately 
+Move to the toolchain location and follow :ref:`this guide <richie_toolchain_how_to_install>` to adequately 
 initialize the toolchain environment.
 
 .. code-block:: console

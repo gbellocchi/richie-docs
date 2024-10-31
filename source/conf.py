@@ -58,7 +58,7 @@ extensions = [
     'sphinxcontrib.bibtex', # .bib files
     'sphinx_design', # badges, buttons, etc.
     'button', # button (defined in CSS+Python)
-    'm2r2'
+    'm2r2' # .. mdinclude for Markdown documents
 ]
 
 render_using_wavedrompy = True

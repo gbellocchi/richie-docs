@@ -13,4 +13,3 @@ TO-DO
 .. include:: tools_pylint.rst
 .. include:: tools_shellcheck.rst
 .. include:: tools_vscode.rst
-

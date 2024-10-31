@@ -1,7 +1,7 @@
-===============
-Getting Started
-===============
-.. _richie_toolchain_getting_started:
+==============
+How to install
+==============
+.. _richie_toolchain_how_to_install:
 
 --------------------
 Clone the Repository
