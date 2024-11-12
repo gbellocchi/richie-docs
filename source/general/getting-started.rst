@@ -4,7 +4,7 @@ Getting Started
 .. _general_getting_started:
 
 ====================
-Repository structure
+Repository Structure
 ====================
 The |repository_structure_emphasized_hyperlink|_ includes various components, which are organized as follows:
 
@@ -18,7 +18,7 @@ The |repository_structure_emphasized_hyperlink|_ includes various components, wh
 .. _repository_structure_emphasized_hyperlink: https://github.com/Advanced-Architectures-UNIMORE/richie
 
 ================
-External sources
+External Sources
 ================
 :smallcap:`Richie` uses Git submodules that have to be initialized. Either clone the repository recursively using
 

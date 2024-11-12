@@ -6,12 +6,12 @@ Pylint
 We leverage Pylint to detect style elements that are in violation of the `PEP8 Python Code Style Guide <https://peps.python.org/pep-0008/>`_, thus reducing manual code alignment steps.
 
 ^^^^^^^^^^^^^^
-How to install
+How to Install
 ^^^^^^^^^^^^^^
 Pylint is automatically installed within the Python Virtual Environment of the :smallcap:`Richie SLD toolchain`.
 
 ^^^^^^^^^^
-How to use
+How to Use
 ^^^^^^^^^^
 Run the following command from the Toolchain root:
 

@@ -1,5 +1,5 @@
 ===============
-FPGA deployment
+FPGA Deployment
 ===============
 TBD.
 

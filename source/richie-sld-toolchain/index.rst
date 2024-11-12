@@ -1,5 +1,5 @@
 *************
-SLD toolchain
+SLD Toolchain
 *************
 .. _richie_toolchain_index:
 

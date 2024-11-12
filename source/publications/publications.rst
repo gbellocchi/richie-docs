@@ -55,7 +55,7 @@ Workshops & Posters
    .. |poster_1_pdf| replace:: :bdg-link-light:`PDF <https://open-src-soc.org/2022-05/media/posters/4th-RISC-V-Meeting-2022-05-03-Gianluca-Bellocchi-poster.pdf>`
 
 ===================
-Additional readings
+Additional Readings
 ===================
 Additional work which can be found in or contributed to the project, or that fits in the context of :smallcap:`Richie`.
 

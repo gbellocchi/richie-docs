@@ -1,5 +1,5 @@
 =====================
-Hardware architecture
+Hardware Architecture
 =====================
 
 .. figure:: ../img/richie_hw.*
@@ -10,7 +10,7 @@ Hardware architecture
   Hardware architecture.
 
 --------------------------
-Heterogeneous architecture
+Heterogeneous Architecture
 --------------------------
 .. _richie_platform_heterogeneous_architecture:
 
@@ -26,7 +26,7 @@ communicating over a fully-connected AXI-4 crossbar.
 The *L2 memory* is implemented as a multi-port, multi-banked instruction and data ScratchPad Memory (SPM).
 
 --------------
-Cluster fabric
+Cluster Fabric
 --------------
 .. _richie_platform_cluster_fabric:
 
@@ -47,7 +47,7 @@ Finally, the cluster includes an *Event Unit (EU)* to synchronize cores with acc
 the application tasks sequencing by the exchange of 32-bit events signals.
 
 ---------------------------------
-Application-specific accelerators
+Application-Specific Accelerators
 ---------------------------------
 .. _richie_platform_accelerators:
 

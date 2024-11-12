@@ -8,7 +8,7 @@ Linting serves as a productivity tool for designers to quickly find typos and bu
 We leverage Verible to capture different aspects of the code and detect style elements that violate the `lowRISC Verilog Coding Style Guide <https://github.com/lowRISC/style-guides/blob/master/VerilogCodingStyle.md>`_, thus reducing manual code alignment steps.
 
 ^^^^^^^^^^^^^^
-How to install
+How to Install
 ^^^^^^^^^^^^^^
 You can download and build Verible from scratch as explained on the `Verible GitHub page <https://github.com/google/verible/>`_.
 However, since this requires the Bazel build system we recommend consulting the `Verible releases <https://github.com/google/verible/releases>`_
@@ -33,7 +33,7 @@ If you are using Ubuntu 18.04 then instead use:
 Note that we currently use version v0.0-3644-g6882622d, but it is expected that this version is going to be updated frequently, since the tool is under active development.
 
 ^^^^^^^^^^
-How to use
+How to Use
 ^^^^^^^^^^
 Once the generation flow completes, Verible can be used to analyze the generated RTL.
 The tool arguments and invocations are managed in :code:`scripts/verible-format.py`.

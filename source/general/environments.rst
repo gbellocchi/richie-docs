@@ -5,25 +5,37 @@ Environments
 
 :smallcap:`Richie` supports various development environments, depending on the implementation target.
 
-===========
-Development
-===========
+==================
+Accelerator Design
+==================
 
----------------
-Vitis Libraries
----------------
+---------------------------
+Vitis/Vivado HLS (Standard)
+---------------------------
+
 Tool version:
 
 * :code:`AMD-Xilinx tools`
 
-  * **Version** |rarr| 2022.2;
-  * **Usage** |rarr| Required for HLS synthesis.
+  * **Version**: 2019.2;
+  * **Usage**: Required for HLS synthesis.
+
+------------------------
+Vitis HLS Vision Library
+------------------------
+
+Tool version:
+
+* :code:`AMD-Xilinx tools`
+
+  * **Version**: 2022.2;
+  * **Usage**: Required for HLS synthesis.
 
 * :code:`OpenCV`
 
-  * **Version** |rarr| OpenCV-4.4.0 x86 libraries;
-  * **Usage** |rarr| Required for synthesizing Vision kernels;
-  * **Installation** |rarr| Refer to the `Vitis Vision Library documentation <https://github.com/Xilinx/Vitis_Libraries/blob/main/vision/README.md>`_.
+  * **Version**: OpenCV-4.4.0 x86 libraries;
+  * **Usage**: Required for synthesizing Vision kernels;
+  * **Installation**: Refer to the `Vitis Vision Library documentation <https://github.com/Xilinx/Vitis_Libraries/blob/main/vision/README.md>`_.
 
 ==========
 Deployment

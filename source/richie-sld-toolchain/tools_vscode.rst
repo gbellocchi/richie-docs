@@ -4,7 +4,7 @@ Template support in VSCode
 Visual Studio Code (VSCode) allows to define language styles for custom file extensions.
 
 ^^^^^^^^^^^^^^
-How to install
+How to Install
 ^^^^^^^^^^^^^^
 Follow the following instructions:
 

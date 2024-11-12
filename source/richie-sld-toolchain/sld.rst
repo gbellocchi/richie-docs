@@ -1,5 +1,5 @@
 ===================
-System-level design
+System-Level Design
 ===================
 .. _richie_toolchain_sld:
 
@@ -10,7 +10,7 @@ The toolchain facilitates three SLD phases concerning the assembling of accelera
 #. :bolditalic:`System optimization`.
 
 ------------------
-Accelerator design
+Accelerator Design
 ------------------
 .. _richie_toolchain_sld_acc_design:
 
@@ -32,7 +32,7 @@ The IP interface is expected to attain the following requirements:
 * Adopt *simple data ports* or wires for control parameters, thus with no associated I/O protocol and handshaking signal.
 
 ------------------
-System integration
+System Integration
 ------------------
 .. _richie_toolchain_sld_integration:
 
@@ -67,7 +67,7 @@ Specifications are collected in the accelerator library (:code:`src/accelerators
   and the outer platform.
 
 -------------------
-System optimization
+System Optimization
 -------------------
 .. _richie_toolchain_sld_optimization:
 

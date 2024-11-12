@@ -4,7 +4,7 @@ ShellCheck
 `ShellCheck <https://www.shellcheck.net/>`_ is a shell script static analysis tool, which can detect style elements that are in violation of the `Google Shell Style Guide <https://google.github.io/styleguide/shellguide.html>`_.
 
 ^^^^^^^^^^^^^^
-How to install
+How to Install
 ^^^^^^^^^^^^^^
 Consult the `ShellCheck repository <https://github.com/koalaman/shellcheck>`_ and learn how to install the tool.
 We suggest downloading pre-compiled binaries for the latest release.
@@ -17,7 +17,7 @@ The example below is for Linux x86-64 (statically linked):
   tar -xf shellcheck-stable.linux.x86_64.tar.xz
 
 ^^^^^^^^^^
-How to use
+How to Use
 ^^^^^^^^^^
 Run the following command from the Toolchain root:
 

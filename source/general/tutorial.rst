@@ -10,9 +10,9 @@ Before starting with the tutorials, remember to properly read the following docu
 * :ref:`Getting started <general_getting_started>`, to learn how to retrieve the legacy components (hardware, software, tools, etc.). Please note that the **HERO installation** is only required for the compilation of the software applications;
 * :ref:`Environments <general_environments>`, to learn about the development environments.
 
-=================================================================
-Tutorial: Assembling an accelerator-rich computer vision platform
-=================================================================
+============================================================================
+:smallcap:`Tutorial`—Assembling an Accelerator-Rich Computer Vision Platform
+============================================================================
 The following :bolditalic:`step-by-step tutorial` is meant to guide users throughout the design and specialization of a *computer vision pipeline*,
 from the `AMD Vitis Accelerated Libraries <https://github.com/Xilinx/Vitis_Libraries>`_, using the :smallcap:`Richie framework`.
 
@@ -22,7 +22,7 @@ This example can either be run in:
 - RTL simulator: :code:`QuestaSim 10.6`.
 
 ---------------------------
-Description of the use-case
+Description of the Use-Case
 ---------------------------
 
 .. figure:: ../img/tutorial_workload.*
@@ -43,13 +43,13 @@ Each stage operates at OI=1 Ops/Bytes on a dataset, which includes 8 images (3-c
 More information is available in the `Vitis Vision Library documentation <https://xilinx.github.io/Vitis_Libraries/vision/2022.1/index.html>`_.
 
 -------------------
-System-level design
+System-Level Design
 -------------------
 The following steps explain how to employ the toolchain to automatically assemble various instances of the 
 accelerator-rich computer vision platform.
 
 ^^^^^^^^^^^^^^^^^^
-Accelerator design
+Accelerator Design
 ^^^^^^^^^^^^^^^^^^
 During this phase, we will design and synthesize the pipeline components of the computer vision workload using :code:`Vitis HLS`.
 
@@ -68,7 +68,7 @@ Then pick one pipeline stage at a time, run the following commands and then repe
   make run get_rtl
 
 ^^^^^^^^^^^^^^^^^^
-System integration
+System Integration
 ^^^^^^^^^^^^^^^^^^
 During this design stage, the toolchain optimizes the :ref:`HWPE hardware-software interface <richie_platform_accelerators>`
 to enable the communication between the previously designed HLS pipeline components and the :smallcap:`Richie platform`.
@@ -90,7 +90,7 @@ synthesized HLS pipeline components (:code:`rgb2hsv_cv`, :code:`threshold_cv`, :
 Finally, the *system integration phase* is automatically run as part of the :smallcap:`Richie` SLD flow, thus we can now move to the next phase.
 
 ^^^^^^^^^^^^^^^^^^^
-System optimization
+System Optimization
 ^^^^^^^^^^^^^^^^^^^
 At this stage, the SLD toolchain optimizes the :smallcap:`Richie platform` to serve the integrated accelerators with 
 specialized .
@@ -113,7 +113,7 @@ In this specific tutorial, we have formatted each variant name as <:blue:`accnam
 - :purple:`nl2p`: number of L2 memory ports (e.g., :code:`16l2p`).
 
 ^^^^^^^^^^^^^^^^^^^^
-Running the SLD flow
+Running the SLD Flow
 ^^^^^^^^^^^^^^^^^^^^
 Activate now the Python virtual environment:
 
@@ -140,7 +140,7 @@ The generated instance is now available under :code:`output`, including the foll
 Besides, more information concerning the generation flow is also available :ref:`here <richie_toolchain_generation>`.
 
 ^^^^^^^^^^
-FPGA build
+FPGA Build
 ^^^^^^^^^^
 A FPGA bitstream for the AMD Zynq UltraScale+ MPSoC ZCU102 is then easily built, leveraging the AMD Vivado Suite.
 
@@ -152,7 +152,7 @@ A FPGA bitstream for the AMD Zynq UltraScale+ MPSoC ZCU102 is then easily built,
 Our FPGA designs have been validated with the :code:`Vivado 2019.2 edition`.
 
 --------------------
-Software application
+Software Application
 --------------------
 We can now proceed with the design of the software application, where the computer vision pipeline is executed.
 Please note that, at this stage, the **installation of HERO** is mandatory, as it includes the required toolchains 
@@ -224,7 +224,7 @@ The *computer vision benchmark* is kept under :code:`common/benchmarks/` and is 
     #. This process continues until all the stages have been executed. 
 
 ----------------
-Exploration flow
+Exploration Flow
 ----------------
 TBD
 

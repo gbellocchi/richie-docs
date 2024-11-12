@@ -1,5 +1,5 @@
 ==============
-Software stack
+Software Stack
 ==============
 
 .. figure:: ../img/richie_sw.*
@@ -10,7 +10,7 @@ Software stack
   Software stack.
 
 -------------------
-Heterogeneous stack
+Heterogeneous Stack
 -------------------
 .. _richie_platform_heterogeneous_stack:
 

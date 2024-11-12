@@ -1,5 +1,5 @@
 ================
-Exploration flow
+Exploration Flow
 ================
 
 .. figure:: ../img/richie_exploration.*

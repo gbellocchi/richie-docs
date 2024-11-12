@@ -6,7 +6,7 @@ Generation Flow
 The *generation flow* is the toolchain automation core and enables the seamless and rapid composition of accelerator-rich platforms.
 
 ---------------------
-Defintion of template
+Defintion of Template
 ---------------------
 *Templates* consist of markup text which is parsed and rendered given an input set of parameters.
 This process allows to automate the customization of various types of components, which range from hardware IPs to software drivers, libraries and tooling scripts.
@@ -22,7 +22,7 @@ The extension of the template files is composed of:
 For instance, a template component *richie_module_top* implemented in SystemVerilog will have the following name name: *richie_module_top.sv.mako*.
 
 --------------------
-How generation works
+How Generation Works
 --------------------
 This SLD toolchain adopts a design automation approach, where:
 
@@ -32,7 +32,7 @@ This SLD toolchain adopts a design automation approach, where:
 4. The generation output is a *full-fledged accelerator-rich HeSoC*, including a ready-to-go hardware-software stack, simulation testbenches and FPGA scripts.
 
 ----------
-How to run
+How to Run
 ----------
 The generation flow is triggered with the following command:
 

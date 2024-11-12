@@ -2,9 +2,9 @@
 Verification
 ============
 
------------------------------------
-HWPE-based accelerator (standalone)
------------------------------------
+-----------------------------
+HWPE Accelerator (Standalone)
+-----------------------------
 This toolchain supports the standalone verification of its *generated* `HWPE accelerators <https://hwpe-doc.readthedocs.io/en/latest/>`_.
 Additional information concerning the adopted test suite is available in the repository of the `HWPE TestBench (TB) <https://github.com/pulp-platform/hwpe-tb>`_.
 
@@ -31,9 +31,9 @@ Additionally, add the following arguments:
 * **TARGET_ACC_VERIF**: The target DUT, which is assumed to be integrated into the <TARGET_PLATFORM>. This should match the name
   declared in the corresponding :ref:`accelerator specification file <richie_toolchain_sld_integration>`.
 
-^^^^^^^^^^^^
-Build the HW
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+Hardware Build
+^^^^^^^^^^^^^^
 Move now to the root of the HWPE TB (:code:`richie-sld-toolchain/verif/hwpe-tb`) and run the following command to update the external IP sources:
 
 .. code-block:: console
@@ -55,14 +55,14 @@ Prepare the PULP SDK
 There are several possibilities regarding the installation of the PULP SDK.
 
 """"""""""""""""
-SDK dependencies
+SDK Dependencies
 """"""""""""""""
 Start by installing the SDK dependencies of the
 `pulp-builder <https://github.com/pulp-platform/pulp-builder/blob/master/README.md>`_.
 
-"""""""""""""""""""""""""""""""
-Install by the pulp-sdk-release
-"""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""
+Install by the :code:`pulp-sdk-release`
+"""""""""""""""""""""""""""""""""""""""
 We recommend installing the SDK using the `pulp-sdk-release <https://github.com/pulp-platform/pulp-sdk-release>`_.
 
 Once installed, open :code:`pulp-sdk-release/env/env-sdk-2020.01.01.sh` and modify the script
@@ -80,9 +80,9 @@ as follows:
 .. note::
   Our tests have been conducted with the SDK environment version :code:`2020.01.01`.
 
-"""""""""""""""""""""""""""
-Install by the pulp-builder
-"""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""
+Install by the :code:`pulp-builder`
+"""""""""""""""""""""""""""""""""""
 Otherwise, the following commands are to install it through the :code:`pulp-builder`:
 
 .. code-block:: console
@@ -131,9 +131,9 @@ To generate input stimuli and golden results, run:
 .. note::
   Refer to our accelerator examples to learn how to integrate a golden model in this test suite.
 
-^^^^^^^^^^^^
-Build the SW
-^^^^^^^^^^^^
+^^^^^^^^^^^^^^
+Software Build
+^^^^^^^^^^^^^^
 In :code:`hwpe-tb/sw` you can find the SW components to build an application running bare-metal on the RISC-V core of the TB.
 The goal of the application is basically to program and feed the accelerator in a similar way to what would happen in a full-fledged system.
 
