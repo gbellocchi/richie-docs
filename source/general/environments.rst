@@ -5,49 +5,60 @@ Environments
 
 :smallcap:`Richie` supports various development environments, depending on the implementation target.
 
-==================
-Accelerator Design
-==================
+========================
+Local Configuration File
+========================
 
----------------------------
-Vitis/Vivado HLS (Standard)
----------------------------
+Create a :code:`local.cfg` file at the root of the :smallcap:`Richie` repository and include the following fields:
 
-Tool version:
+* :code:`TARGET_PLATFORM`: *Name of the target platform*, which corresponds to the :code:`name` field of a :ref:`platform specification file <richie_toolchain_sld_optimization>`;
+* :code:`BR2_RICHIE_BITSTREAM`: *Absolute path to the FPGA bitstream*, included in the FPGA build of the target platform;
+* :code:`BR2_RICHIE_XSA`: *Absolute path to the XSA file*, included in the FPGA build of the target platform.
 
-* :code:`AMD-Xilinx tools`
+This file must be updated everytime a field changes, e.g., when the FPGA should be configured with a different bitstream from the one specified by :code:`BR2_RICHIE_BITSTREAM`.
 
-  * **Version**: 2019.2;
-  * **Usage**: Required for HLS synthesis.
+====================
+List of Environments
+====================
 
-------------------------
-Vitis HLS Vision Library
-------------------------
+-----------------------------------------------------
+Accelerator Design :octicon:`rocket;1em;sd-text-info`
+-----------------------------------------------------
+.. _general_environments_accelerator_design:
 
-Tool version:
+.. dropdown:: Vivado HLS (Standard) 
 
-* :code:`AMD-Xilinx tools`
+  *Description*: HLS synthesis tested with the following setup. |br|
+  *Tool*: Vivado HLS 2019.2 (Vitis HLS is also supported, but not tested for all accelerators).
 
-  * **Version**: 2022.2;
-  * **Usage**: Required for HLS synthesis.
+.. dropdown:: Vitis HLS Vision Library
 
-* :code:`OpenCV`
+  *Description*: HLS synthesis for Vitis HLS Vision accelerators. |br|
+  *Tool*: Vitis HLS 2022.2. |br|
+  *Deps*: `Vitis Vision Library <https://github.com/Xilinx/Vitis_Libraries/blob/main/vision/README.md>`_, `OpenCV 4.4.0 <https://github.com/Xilinx/Vitis_Libraries/blob/main/vision/README.md#opencv-installation-guidance>`_. |br|
+  *Sourcing the environment*:
+  From the root of the :smallcap:`Richie` repository, open the script :code:`env/setups/vitis_hls_vision.sh` and define:
 
-  * **Version**: OpenCV-4.4.0 x86 libraries;
-  * **Usage**: Required for synthesizing Vision kernels;
-  * **Installation**: Refer to the `Vitis Vision Library documentation <https://github.com/Xilinx/Vitis_Libraries/blob/main/vision/README.md>`_.
+  - :code:`vitis_install_path`: Environment variable, including the path to the Vitis build directory, e.g., "export vitis_install_path=some/path/Vitis/2022.2".
+  - :code:`opencv_install_path`: Environment variable, including the path to your OpenCV directory, e.g., "export opencv_install_path=some/path/opencv".
 
-==========
-Deployment
-==========
+  Then, execute :code:`source env/richie_user_setup.sh` at the root of the :smallcap:`Richie` repository and select the development environment :code:`vitis_hls_vision`.
 
--------------
-Xilinx ZCU102
--------------
-A complete Linux environment with kernel and the base root filesystem for the ARMv8 host on the Xilinx Zynq UltraScale+ MPSoC ZCU102
+------------------------------------------------
+FPGA Development :octicon:`cpu;1em;sd-text-info`
+------------------------------------------------
 
---------------
-RTL Simulation
---------------
-An environment is provided to simulate the accelerator in RTL.
-Specify a QuestaSim license through the LM_LICENSE_FILE variable in :code:`env/setup_esim.sh`.
+.. dropdown:: Xilinx ZCU102
+
+  *Description*: A complete Linux environment with kernel and the base root filesystem for 
+  the ARMv8 host on the Xilinx Zynq UltraScale+ MPSoC ZCU102. |br|
+  *Tool*: Vivado 2019.2.
+
+--------------------------------------------
+Simulation :octicon:`tools;1em;sd-text-info`
+--------------------------------------------
+
+.. dropdown:: RTL Simulation
+
+  *Description*: RTL simulation environment. |br|
+  *Tool*: QuestaSim 10.6 (or 10.5).

@@ -10,11 +10,17 @@ Before starting with the tutorials, remember to properly read the following docu
 * :ref:`Getting started <general_getting_started>`, to learn how to retrieve the legacy components (hardware, software, tools, etc.). Please note that the **HERO installation** is only required for the compilation of the software applications;
 * :ref:`Environments <general_environments>`, to learn about the development environments.
 
-============================================================================
-:smallcap:`Tutorial`—Assembling an Accelerator-Rich Computer Vision Platform
-============================================================================
-The following :bolditalic:`step-by-step tutorial` is meant to guide users throughout the design and specialization of a *computer vision pipeline*,
-from the `AMD Vitis Accelerated Libraries <https://github.com/Xilinx/Vitis_Libraries>`_, using the :smallcap:`Richie framework`.
+=======================================================
+Assembling an Accelerator-Rich Computer Vision Platform
+=======================================================
+This tutorial is meant to guide users in the design and specialization of a *computer vision pipeline* and covers the following topics:
+
+1) Design of application-specific accelerators using the `AMD Vitis Accelerated Libraries <https://github.com/Xilinx/Vitis_Libraries>`_;
+2) System-level integration of the accelerators using the :smallcap:`Richie SLD toolchain`;
+3) System-level optimization using the :smallcap:`Richie SLD toolchain`;
+4) FPGA build and deployment (alternatively, RTL simulation is also an option);
+5) Software application design and build;
+6) Exploration flow.
 
 This example can either be run in:
 
@@ -47,6 +53,11 @@ System-Level Design
 -------------------
 The following steps explain how to employ the toolchain to automatically assemble various instances of the 
 accelerator-rich computer vision platform.
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Sourcing the Development Environment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+:ref:`Refer to this section <general_environments_accelerator_design>` to learn how to source the correct development environment—**Vitis HLS Vision Library**.
 
 ^^^^^^^^^^^^^^^^^^
 Accelerator Design
